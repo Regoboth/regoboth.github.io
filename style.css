@@ -1,0 +1,171 @@
+/*--- Variables Globales ---*/
+
+:root {
+    /* Palette de couleurs */
+    --couleur-fond: #0f172a;
+    --couleur-fond-alt: #1e293b;
+    --couleur-texte-principal: #e2e8f0;
+    --couleur-texte-secondaire: #94a3b8;
+    --couleur-accentuation: #0ea5e9;
+    --couleur-accentuation-survol: #0284c7;   
+    
+    /* Typographie */
+    --police-principale: 'Inter', sans-serif;
+    --police-code: 'Fira Code', monospace;
+}
+
+/*--- Réinitialisation ---*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--police-principale);
+    background-color: var(--couleur-fond);
+    color: var(--couleur-texte-principal);
+    line-height: 1.6;
+}
+
+/*--- Navigation (Header) ---*/
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--couleur-fond-alt);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+}
+
+.logo {
+    font-family: var(--police-code);
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--couleur-accentuation);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--couleur-texte-principal);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--couleur-accentuation);
+}
+
+/*--- Section : Bannière Accueil ---*/
+
+.banniere-accueil {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contenu-banniere {
+    max-width: 700px;
+    margin-top: 80px;
+}
+
+.etiquette-terminal {
+    font-family: var(--police-code);
+    color: var(--couleur-accentuation);
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    color: var(--couleur-texte-secondaire);
+    margin-bottom: 1.5rem;
+}
+
+.banniere-accueil p {
+    font-size: 1.1rem;
+    color: var(--couleur-texte-secondaire);
+    margin-bottom: 2.5rem;
+}
+
+/*--- Boutons d'action ---*/
+
+.groupe-boutons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.bouton {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: var(--police-code);
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.bouton-principal {
+    background-color: var(--couleur-accentuation);
+    color: #fff;
+    border: 2px solid var(--couleur-accentuation);
+}
+
+.bouton-principal:hover {
+    background-color: var(--couleur-accentuation-survol);
+    border-color: var(--couleur-accentuation-survol);
+}
+
+.bouton-secondaire {
+    background-color: transparent;
+    color: var(--couleur-accentuation);
+    border: 2px solid var(--couleur-accentuation);
+}
+
+.bouton-secondaire:hover {
+    background-color: rgba(14, 165, 233, 0.1);
+}
+
+/*--- Responsive (Mobile) ---*/
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+}
