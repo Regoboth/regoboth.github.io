@@ -4,6 +4,13 @@
 
 Ce dépôt contient le code source statique de mon portfolio professionnel, hébergé via GitHub Pages. Il a été conçu pour présenter mon parcours, mes compétences techniques et mes projets en infrastructure réseau et cybersécurité.
 
+## 🎯 Projets mis en avant
+
+Ce portfolio détaille plusieurs mises en situation professionnelle (SAE) couvrant le référentiel de la cybersécurité :
+* **SAE 303 (Administrer & Sécuriser) :** Conception d'une architecture réseau multi-sites sécurisée en haute disponibilité (Cluster Hyper-V, Pare-feu Fortinet, VLANs).
+* **SAE 304 (Surveiller & Sécuriser) :** Audit de sécurité et pentesting d'un environnement vulnérable (Kali Linux, Nessus, Metasploit, exploitation de failles RCE).
+* **SAE 302 (Programmer) :** Développement d'applications communicantes en Python (Sockets TCP/UDP, Multithreading, Git).
+
 ## 🌐 Démonstration en direct
 
 Le portfolio est accessible à cette adresse : **[https://regoboth.github.io](https://regoboth.github.io)**
@@ -35,12 +42,14 @@ Si vous souhaitez consulter le code en local :
 
 Clonez ce dépôt :
 
-**git clone [https://github.com/ton-nom-utilisateur/ton-nom-utilisateur.github.io.git](https://github.com/ton-nom-utilisateur/ton-nom-utilisateur.github.io.git)**
-Ouvrez simplement le fichier index.html dans n'importe quel navigateur web moderne. Aucun serveur local n'est requis.
+1. Clonez ce dépôt :
+**git clone [https://github.com/regoboth/regoboth.github.io.git](https://github.com/regoboth/regoboth.github.io.git)**
+
+2. Ouvrez simplement le fichier index.html dans n'importe quel navigateur web moderne. Aucun serveur local n'est requis.
 
 ## 📫 Contact
-* **LinkedIn** : [Lien vers mon profil LinkedIn]
+* **LinkedIn** : www.linkedin.com/in/rego-grandville
 
-* **Email** : [Mon adresse email pro]
+* **Email** : regobothgrandville.pro@gmail.com
 
 *Ce projet est mis à jour régulièrement au fur et à mesure de mon parcours*
