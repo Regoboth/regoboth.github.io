@@ -169,3 +169,117 @@ h2 {
         display: none;
     }
 }
+
+/*--- Classes utilitaires généraux ---*/
+
+.conteneur-section {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.titre-section {
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    color: var(--couleur-texte-principal);
+    margin-bottom: 0.5rem;
+}
+
+.sous-titre-section {
+    color: var(--couleur-texte-secondaire);
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*--- Section : Projets ---*/
+
+.section-projets {
+    padding: 6rem 2rem;
+    background-color: var(--couleur-fond-alt);
+}
+
+.infobulle {
+    border-bottom: 1px dashed var(--couleur-texte-secondaire);
+    cursor: help;
+    position: relative;
+}
+
+.grille-projets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.carte-projet {
+    background-color: var(--couleur-fond);
+    border: 1px solid rgba(148, 163, 184, 0.1);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.carte-projet:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border-color: rgba(14, 165, 233, 0.3);
+}
+
+.en-tete-carte { margin-bottom: 1.5rem; }
+
+.etiquette-domaine {
+    font-family: var(--police-code);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Couleurs des étiquettes */
+.domaine-administrer { background-color: rgba(16, 185, 129, 0.1); color: #10b981; }
+.domaine-programmer { background-color: rgba(139, 92, 246, 0.1); color: #8b5cf6; }
+.domaine-securiser { background-color: rgba(239, 68, 68, 0.1); color: #ef4444; }
+
+.titre-projet {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--couleur-texte-principal);
+}
+
+.description-projet {
+    color: var(--couleur-texte-secondaire);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Positionnement des outils en bas de carte */
+.conteneur-outils { margin-top: auto; }
+
+.label-outils {
+    display: block;
+    font-family: var(--police-code);
+    font-size: 0.85rem;
+    color: var(--couleur-texte-principal);
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag-tech {
+    background-color: var(--couleur-fond-alt);
+    color: var(--couleur-texte-secondaire);
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    border: 1px solid rgba(148, 163, 184, 0.2);
+}

@@ -6,7 +6,7 @@ Ce dépôt contient le code source statique de mon portfolio professionnel, héb
 
 ## 🌐 Démonstration en direct
 
-Le portfolio est accessible à cette adresse : **[https://regoboth-grandville.github.io](https://regoboth-grandville.github.io)**
+Le portfolio est accessible à cette adresse : **[https://regoboth.github.io](https://regoboth.github.io)**
 
 ## 🛠️ Technologies et Standards utilisés
 
@@ -26,7 +26,8 @@ Ce projet a été développé initialement, sans framework lourd, afin de garant
 ├── index.html       # Page principale (Une page)
 ├── style.css        # Feuille de style principale
 ├── README.md        # Documentation du dépôt
-└── 📁 assets/       # Dossier pour le CV PDF et les images```
+└── 📁 assets/       # Dossier pour le CV PDF et les images
+```
 
 ## 🚀 Installation locale (Pour consultation)
 
