@@ -330,3 +330,39 @@ h2 {
     color: var(--couleur-accentuation);
     font-weight: bold;
 }
+
+/*--- Section : Contact & Footer ---*/
+.section-contact {
+    padding: 6rem 2rem 2rem 2rem;
+    background-color: var(--couleur-fond-alt);
+    border-top: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+#btn-contact {
+    cursor: pointer;
+    margin-bottom: 3rem;
+}
+
+.liens-sociaux {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.liens-sociaux a {
+    color: var(--couleur-texte-principal);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.liens-sociaux a:hover {
+    color: var(--couleur-accentuation);
+}
+
+.copyright {
+    color: var(--couleur-texte-secondaire);
+    font-size: 0.85rem;
+    font-family: var(--police-code);
+}

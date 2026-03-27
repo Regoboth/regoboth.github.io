@@ -120,56 +120,82 @@
             </div>
         </section>
         
-<section id="competences" class="section-competences">
-            <div class="conteneur-section">
-                <h2 class="titre-section">Compétences</h2>
-                <p class="sous-titre-section">Outils et environnements maîtrisés</p>
-
-                <div class="grille-competences">
-                    
-                    <div class="carte-competence">
-                        <h3 class="titre-competence">Administration & Systèmes</h3>
-                        <ul class="liste-competences">
-                            <li>Linux (Debian, Ubuntu)</li>
-                            <li>Windows Server & Active Directory</li>
-                            <li>Services : DNS, DHCP, HTTP(S), FTP, SMTP</li>
-                            <li>Supervision & Parc : GLPI</li>
-                        </ul>
-                    </div>
-
-                    <div class="carte-competence">
-                        <h3 class="titre-competence">Réseaux & Sécurité</h3>
-                        <ul class="liste-competences">
-                            <li>Routage & Commutation (Cisco, STP, VLAN)</li>
-                            <li>Sécurité Périmétrique (Fortinet, VPN, ACL)</li>
-                            <li>Audit & Pentest (Kali, Nessus, Wireshark)</li>
-                            <li>Forensic & Automatisation (PowerShell)</li>
-                        </ul>
-                    </div>
-
-                    <div class="carte-competence">
-                        <h3 class="titre-competence">Développement & BDD</h3>
-                        <ul class="liste-competences">
-                            <li>Python (POO, Sockets réseaux)</li>
-                            <li>Scripting (Bash, PowerShell)</li>
-                            <li>Bases de données (PostgreSQL, MariaDB)</li>
-                            <li>Web (HTML5/CSS3, bases PHP/JS)</li>
-                        </ul>
-                    </div>
-
-                    <div class="carte-competence">
-                        <h3 class="titre-competence">Transverses & Langues</h3>
-                        <ul class="liste-competences">
-                            <li>Gestion de projet (Trello, Méthodes Agiles)</li>
+	<section id="competences" class="section-competences">
+        	    <div class="conteneur-section">
+        	        <h2 class="titre-section">Compétences</h2>
+        	        <p class="sous-titre-section">Outils et environnements maîtrisés</p>
+	
+        	        <div class="grille-competences">
+        	            
+        	            <div class="carte-competence">
+        	                <h3 class="titre-competence">Administration & Systèmes</h3>
+        	                <ul class="liste-competences">
+        	                    <li>Linux (Debian, Ubuntu)</li>
+        	                    <li>Windows Server & Active Directory</li>
+        	                    <li>Services : DNS, DHCP, HTTP(S), FTP, SMTP</li>
+        	                    <li>Supervision & Parc : GLPI</li>
+        	                </ul>
+        	            </div>
+	
+        	            <div class="carte-competence">
+        	                <h3 class="titre-competence">Réseaux & Sécurité</h3>
+        	                <ul class="liste-competences">
+        	                    <li>Routage & Commutation (Cisco, STP, VLAN)</li>
+        	                    <li>Sécurité Périmétrique (Fortinet, VPN, ACL)</li>
+        	                    <li>Audit & Pentest (Kali, Nessus, Wireshark)</li>
+        	                    <li>Forensic & Automatisation (PowerShell)</li>
+        	                </ul>
+        	            </div>
+		
+        	            <div class="carte-competence">
+        	                <h3 class="titre-competence">Développement & BDD</h3>
+        	                <ul class="liste-competences">
+        	                    <li>Python (POO, Sockets réseaux)</li>
+        	                    <li>Scripting (Bash, PowerShell)</li>
+        	                    <li>Bases de données (PostgreSQL, MariaDB)</li>
+        	                    <li>Web (HTML5/CSS3, bases PHP/JS)</li>
+        	                </ul>
+        	            </div>
+	
+        	            <div class="carte-competence">
+        	                <h3 class="titre-competence">Transverses & Langues</h3>
+        	                <ul class="liste-competences">
+        	                    <li>Gestion de projet (Trello, Méthodes Agiles)</li>
                             <li>Versioning & Collaboration (Git/GitHub)</li>
-                            <li>Anglais : B2 (Technique IT)</li>
-                            <li>Allemand : B1</li>
-                        </ul>
-                    </div>
+        	                    <li>Anglais : B2 (Technique IT)</li>
+        	                    <li>Allemand : B1</li>
+        	                </ul>
+        	            </div>
+	
+        	        </div>
+        	    </div>
+        	</section>
+        	
+	<footer id="contact" class="section-contact">
+        	<div class="conteneur-section text-center">
+        	    <h2 class="titre-section">Discutons de vos enjeux</h2>
+        	    <p class="sous-titre-section">Actuellement à la recherche d'une opportunité en cybersécurité.</p>
+            
+            	<button id="btn-contact" class="bouton bouton-principal" data-user="ton.prenom" data-domaine="ton-domaine.fr">
+                	Envoyer un e-mail
+            	</button>
 
-                </div>
-            </div>
-        </section>
+            	<div class="liens-sociaux">
+                	<a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                	<a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+            	</div>
+            
+	            <p class="copyright">&copy; 2026 Regoboth GRANDVILLE. Tous droits réservés.</p>
+        	</div>
+    	</footer>
+
+    	<script>
+        	document.getElementById('btn-contact').addEventListener('click', function() {
+        	    var user = this.getAttribute('data-user');
+        	    var domaine = this.getAttribute('data-domaine');
+        	    window.location.href = 'mailto:' + user + '@' + domaine;
+        	});
+    	</script>
     </main>
 </body>
 </html>
